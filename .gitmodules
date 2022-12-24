@@ -1,6 +1,9 @@
 [submodule "qmk/keychron_fork/qmk_firmware"]
 	path = qmk/keychron_fork/qmk_firmware
 	url = git@github.com:Keychron/qmk_firmware.git
+    ignore = dirty
+
 [submodule "qmk/upstream/qmk_firmware"]
 	path = qmk/upstream/qmk_firmware
 	url = git@github.com:qmk/qmk_firmware.git
+    ignore = dirty

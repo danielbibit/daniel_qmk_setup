@@ -1,0 +1,6 @@
+#pragma once
+
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+#define MOUSEKEY_MAX_SPEED 5
+#define MOUSEKEY_DELAY 6
