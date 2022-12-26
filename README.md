@@ -10,7 +10,6 @@ bash setup_links.sh
 ```sh
 make keychron/k8_pro/ansi/rgb:danielbibit
 ```
-
 ```sh
 qmk compile -kb tada68 -km danielbibit
 ```
