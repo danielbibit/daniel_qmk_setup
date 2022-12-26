@@ -1,6 +1,5 @@
-# QMK Daniel
+#QMK Daniel
 
 ```sh
 make keychron/k8_pro/ansi/rgb:danielbibit
 ```
-
