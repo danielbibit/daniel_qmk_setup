@@ -58,11 +58,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
          LCA(KC_T), KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL, _______, _______, _______,
 
-         LCA(KC_F1), KC_MPLY, _______, KC_MPRV, KC_MNXT, _______, _______, _______, _______, LCA(KC_O), KC_PSCR, _______, KC_PGUP, LGUI(KC_L), _______, _______, _______,
+         LCA(KC_F1), KC_MPLY, _______, KC_MPRV, KC_MNXT, LCA(KC_O), _______, _______, _______, _______, _______, _______, KC_PGUP, LGUI(KC_L), _______, _______, _______,
 
-         KC_LCTL, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, _______, KC_PGDN, KC_INS,
+         KC_LCTL, _______, KC_PSCR, _______, LCA(KC_M), _______, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, _______, KC_PGDN, KC_INS,
 
-         KC_LSFT, KC_VOLD, KC_VOLU, LCA(KC_C), KC_MUTE, _______, _______, LCA(KC_M), KC_HOME, KC_END, _______, KC_RSFT, _______,
+         KC_LSFT, KC_VOLD, KC_VOLU, LCA(KC_C), KC_MUTE, _______, _______, _______, KC_HOME, KC_END, _______, KC_RSFT, _______,
 
          KC_CAPS, KC_LGUI, KC_LALT, KC_LCTL, KC_RALT, _______, _______, KC_RCTL, _______, _______, _______
     ),
