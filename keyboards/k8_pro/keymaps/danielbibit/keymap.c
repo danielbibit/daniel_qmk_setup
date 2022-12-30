@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
          KC_LSFT, KC_VOLD, KC_VOLU, LCA(KC_C), KC_MUTE, _______, _______, LCA(KC_M), _______, _______, _______, KC_RSFT, _______,
 
-         KC_LCTL, KC_LGUI, KC_LALT, KC_LCTL, KC_RALT, _______, _______, KC_RCTL, _______, _______, _______
+         KC_CAPS, KC_LGUI, KC_LALT, KC_LCTL, KC_RALT, _______, _______, KC_RCTL, _______, _______, _______
     ),
 
     [MOUSE_FN] = LAYOUT_ansi_87(
@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
          RGB_TOG, RGB_MOD, RGB_VAI, RGB_HUI, RGB_SAI, RGB_SPI, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 
-         KC_CAPS, RGB_RMOD, RGB_VAD, RGB_HUD, RGB_SAD, RGB_SPD, _______, _______, _______, _______, _______, _______, _______,
+         _______, RGB_RMOD, RGB_VAD, RGB_HUD, RGB_SAD, RGB_SPD, _______, _______, _______, _______, _______, _______, _______,
 
          _______, _______, _______, _______, _______, _______, NK_TOGG, _______, _______, _______, BAT_LVL, _______, _______,
 
