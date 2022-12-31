@@ -8,7 +8,9 @@
     fn  (layer-toggle daniel_fn) ;; Bind num to a button that switches to a layer
     calc  C-A-c
     code  C-A-o
+    note  C-A-w
     terminal C-A-t
+    term-edit (tap-macro C-x C-e)
     caps_esc_ctrl (tap-hold 200 esc lctrl)
     tab_fn (tap-next tab @fn)
     back_fn (tap-next \ @fn)
@@ -50,16 +52,19 @@
 )
 
 
+;; TODO Add mute mic
+;; TODO Add OS Lock
+;; TODO Add Audio Toggle
 (deflayer daniel_fn
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
   @terminal f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 del
 
-  _ pp pgup prev next _ _ _ _ @code prnt _ _ _
+  _ pp @note prev next _ _ _ _ @code _ _ pgup _
 
-  _ _ pgdn _ KeyHome KeyEnd left down up rght _ _ ins
+  _ @term-edit prnt _ _ _ left down up rght _ pgdn ins
 
-  _ vold volu @calc KeyMute _ _ _ _ _ _ _
+  _ vold volu @calc KeyMute _ _ _ KeyHome KeyEnd _ _
 
   _ caps _ _ lctl _ _ _ _ _ _
 
