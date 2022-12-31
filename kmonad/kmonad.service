@@ -4,7 +4,7 @@ Description=kmonad keyboard config
 [Service]
 Restart=always
 RestartSec=3
-ExecStart=/usr/bin/kmonad /home/daniel/Documents/Code/daniel_qmk_setup/kmonad/thinkpad_T440_abnt.kbd
+ExecStart=/home/daniel/.local/bin/kmonad /home/daniel/Documents/Code/daniel_qmk_setup/kmonad/thinkpad_T440_abnt.kbd
 Nice=-20
 
 [Install]
