@@ -5,50 +5,48 @@
 
 
 (defalias
-    fn  (layer-toggle daniel_fn) ;; Bind num to a button that switches to a layer
+    fn  (layer-toggle daniel_fn)
     calc  C-A-c
     code  C-A-o
     note  C-A-w
     terminal C-A-t
     term-edit (tap-macro C-x C-e)
     caps_esc_ctrl (tap-hold 200 esc lctrl)
-    tab_fn (tap-next tab @fn)
-    back_fn (tap-next \ @fn)
     enter_fn (tap-next ret @fn)
 )
 
 
 (defsrc
-  esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 home end ins del
+    esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 home end ins del
 
-  grv  1 2 3 4 5 6 7 8 9 0 - = bspc
+    grv  1 2 3 4 5 6 7 8 9 0 - = bspc
 
-  tab q w e r t y u i o p [ ] \
+    tab q w e r t y u i o p [ ] \
 
-  caps a s d f g h j k l ; ' ret
+    caps a s d f g h j k l ; ' ret
 
-  lsft z x c v b n m , . / rsft
+    lsft z x c v b n m , . / rsft
 
-  wkup lctl lmet lalt spc ralt sys rctl pgdn up pgup
+    wkup lctl lmet lalt spc ralt sys rctl pgdn up pgup
 
-  left down rght
+    left down rght
 )
 
 
 (deflayer main
-  esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 home end ins del
+    esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 home end ins del
 
-  grv  1 2 3 4 5 6 7 8 9 0 - = bspc
+    grv  1 2 3 4 5 6 7 8 9 0 - = bspc
 
-  tab q w e r t y u i o p [ ] \
+    tab q w e r t y u i o p [ ] \
 
-  @caps_esc_ctrl a s d f g h j k l ; ' @enter_fn
+    @caps_esc_ctrl a s d f g h j k l ; ' @enter_fn
 
-  lsft z x c v b n m , . / rsft
+    lsft z x c v b n m , . / rsft
 
-  wkup @fn lmet lalt spc ralt XX rctl pgdn up pgup
+    wkup @fn lmet lalt spc ralt XX rctl pgdn up pgup
 
-  left down rght
+    left down rght
 )
 
 
@@ -56,17 +54,17 @@
 ;; TODO Add OS Lock
 ;; TODO Add Audio Toggle
 (deflayer daniel_fn
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-  @terminal f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 del
+    @terminal f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 del
 
-  _ pp @note prev next _ _ _ _ @code _ _ pgup _
+    _ pp @note prev next @code _ _ _ _ up _ pgup _
 
-  _ @term-edit prnt _ _ _ left down up rght _ pgdn ins
+    _ @term-edit prnt _ _ _ left down up rght _ pgdn ins
 
-  _ vold volu @calc KeyMute _ _ _ KeyHome KeyEnd _ _
+    _ vold volu @calc KeyMute _ down _ KeyHome KeyEnd _ _
 
-  _ caps _ _ lctl _ _ _ _ _ _
+    _ caps _ _ lctl _ _ _ _ _ _
 
-  _ _ _
+    _ _ _
 )
