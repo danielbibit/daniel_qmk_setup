@@ -1,0 +1,154 @@
+[
+  [
+    "Term",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    {
+      "w": 2
+    },
+    "Delete"
+  ],
+  [
+    {
+      "w": 1.5
+    },
+    "Audio Switch",
+    "Play",
+    "Note\n\n\n\n\n\nEditor",
+    "Prev",
+    "Next",
+    "Text\n\n\n\n\n\nEditor",
+    {
+      "a": 7
+    },
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    {
+      "a": 4
+    },
+    "Page\n\n\n\n\n\nUp",
+    {
+      "w": 1.5
+    },
+    "OS Lock"
+  ],
+  [
+    {
+      "w": 1.75
+    },
+    "Control",
+    "Term\n\n\n\n\n\nEdit",
+    "Screen\n\n\n\n\n\nShot",
+    {
+      "a": 7
+    },
+    "",
+    {
+      "a": 4
+    },
+    "Mic\n\n\n\n\n\nMute",
+    {
+      "a": 7
+    },
+    "",
+    {
+      "a": 4
+    },
+    "Left",
+    "Down",
+    "Up",
+    "Right",
+    {
+      "a": 7
+    },
+    "",
+    {
+      "a": 4
+    },
+    "Page\n\n\n\n\n\nDown",
+    {
+      "w": 2.25
+    },
+    "Insert"
+  ],
+  [
+    {
+      "w": 2.25
+    },
+    "Shift",
+    "Vol\n\n\n\n\n\nDown",
+    "Vol\n\n\n\n\n\nUp",
+    "Calc",
+    "Mute",
+    {
+      "a": 7
+    },
+    "",
+    "",
+    "",
+    {
+      "a": 4
+    },
+    "Home",
+    "End",
+    {
+      "a": 7
+    },
+    "",
+    {
+      "a": 4,
+      "w": 2.75
+    },
+    "Shift"
+  ],
+  [
+    {
+      "w": 1.25
+    },
+    "Caps Lock",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "a": 7,
+      "w": 6.25
+    },
+    "Control",
+    {
+      "a": 4,
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Menu",
+    {
+      "w": 1.25
+    },
+    "Ctrl"
+  ]
+]
