@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  qmk_setup:
+    container_name: qmk_setup
+    build: .
+    volumes:
+      - ./:/workspace/
+    command: sleep infinity
