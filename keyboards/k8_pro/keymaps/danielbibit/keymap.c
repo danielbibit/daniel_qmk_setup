@@ -20,8 +20,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case TERM_EDIT:
             if (record->event.pressed) {
-                SEND_STRING(SS_LCTL("x") SS_DELAY(250));
-                SEND_STRING(SS_LCTL("e"));
+                SEND_STRING(SS_LCTL("x") SS_DELAY(50) SS_LCTL("e"));
             } else {
                 // released event
             }
