@@ -11,6 +11,8 @@ make keychron/k8_pro/ansi/rgb:danielbibit
 ```
 ```sh
 qmk compile -kb tada68 -km danielbibit
+
+qmk compile -kb converter/usb_usb/pro_micro -km danielbibit
 ```
 ## Layout
 ### Main
