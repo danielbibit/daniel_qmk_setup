@@ -7,3 +7,4 @@ SWAP_HANDS_ENABLE = no
 
 EXTRAFLAGS += -flto
 
+F_CPU = 16000000
