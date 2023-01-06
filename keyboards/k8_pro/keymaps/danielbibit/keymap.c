@@ -59,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [DAN_WIN] = LAYOUT_ansi_87(
-        _______, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_PSCR, KC_SCRL, KC_PAUS,
+        KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_PSCR, KC_SCRL, KC_PAUS,
 
         KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, KC_INS, KC_HOME, KC_PGUP,
 
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_UP,
 
-        MO(DAN_WIN_FN), KC_LGUI, KC_LALT, LT(MOUSE_FN,KC_SPC), KC_RALT, KC_RGUI, MO(CONFIG), KC_NO, KC_LEFT, KC_DOWN, KC_RGHT
+        MO(DAN_WIN_FN), KC_LGUI, KC_LALT, LT(MOUSE_FN,KC_SPC), KC_RALT, KC_RGUI, MO(CONFIG), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
     ),
 
     [DAN_WIN_FN] = LAYOUT_ansi_87(
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         KC_LSFT, KC_VOLD, KC_VOLU, LCA(KC_C), KC_MUTE, _______, KC_DOWN, _______, KC_HOME, KC_END, _______, KC_RSFT, _______,
 
-        KC_CAPS, KC_LGUI, KC_LALT, KC_LCTL, KC_RALT, _______, _______, KC_RCTL, _______, _______, _______
+        KC_CAPS, KC_LGUI, KC_LALT, MT(MOD_LCTL, KC_SPC), KC_RALT, _______, _______, KC_RCTL, _______, _______, _______
     ),
 
     [MOUSE_FN] = LAYOUT_ansi_87(
