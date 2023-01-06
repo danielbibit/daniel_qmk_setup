@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         KC_LSFT, KC_VOLD, KC_VOLU, LCA(KC_C), KC_MUTE, _______, KC_DOWN, _______, KC_HOME, KC_END, _______, KC_RSFT, _______, _______,
 
-        KC_CAPS, KC_LGUI, KC_LALT, KC_LCTL, KC_RALT, _______, KC_RCTL, _______, _______, _______
+        KC_CAPS, KC_LGUI, KC_LALT, MT(MOD_LCTL, KC_SPC), KC_RALT, _______, KC_RCTL, _______, _______, _______
     ),
 
     [MOUSE_FN] = LAYOUT_65_ansi(
