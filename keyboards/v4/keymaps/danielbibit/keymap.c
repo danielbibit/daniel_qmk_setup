@@ -11,7 +11,7 @@ enum layers {
 
 enum custom_keycodes {
     /*LAST_KEYCHRON = KC_CORTANA,*/
-    TERM_EDIT,
+    TERM_EDIT = SAFE_RANGE,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
