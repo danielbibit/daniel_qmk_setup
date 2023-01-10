@@ -9,10 +9,14 @@
     calc  C-A-c
     code  C-A-o
     note  C-A-w
+    audio_toggle C-A-f1
+    mic_toggle C-A-m
+    win_lock M-l
     terminal C-A-t
     term-edit (tap-macro C-x C-e)
     caps_esc_ctrl (tap-hold 200 esc lctrl)
     enter_fn (tap-next ret @fn)
+    space_ctrl (tap-next spc lctl)
 )
 
 
@@ -50,21 +54,18 @@
 )
 
 
-;; TODO Add mute mic
-;; TODO Add OS Lock
-;; TODO Add Audio Toggle
 (deflayer daniel_fn
     _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
     @terminal f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 del
 
-    _ pp @note prev next @code _ _ _ _ up _ pgup _
+    @audio_toggle pp @note prev next @code _ _ _ _ up _ pgup @win_lock
 
-    _ @term-edit prnt _ _ _ left down up rght _ pgdn ins
+    _ @term-edit prnt _ @mic_toggle _ left down up rght _ pgdn ins
 
     _ vold volu @calc KeyMute _ down _ KeyHome KeyEnd _ _
 
-    _ caps _ _ lctl _ _ _ _ _ _
+    _ caps _ _ @space_ctrl _ _ _ _ _ _
 
     _ _ _
 )
