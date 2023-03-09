@@ -26,6 +26,10 @@ qmk compile -kb converter/usb_usb/pro_micro -km danielbibit
 * H: Hold
 * B: Both
 
+### Game
+![Game layout image](keyboard_layout_editor/dist/5_game.png)
+* Same as Main layout, without LT keys
+
 ### Dan FN
 ![Dan FN image](keyboard_layout_editor/dist/2_dan_fn.png)
 * TermEdit: C-x C-e
