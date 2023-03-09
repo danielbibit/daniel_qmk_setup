@@ -7,10 +7,13 @@
 git clone git@github.com:danielbibit/daniel_qmk_setup.git --recurse-submodules
 
 docker-compose up -d
-docker exec -it qmk_setup /bin/bash
 
 ```
 ## Compile firmware
+```sh
+# Compile all fimwares to ./bin/
+docker exec -it qmk_setup /bin/bash /workspace/compile_all.sh
+```
 ```sh
 make keychron/k8_pro/ansi/rgb:danielbibit
 ```
@@ -18,6 +21,8 @@ make keychron/k8_pro/ansi/rgb:danielbibit
 qmk compile -kb tada68 -km danielbibit
 
 qmk compile -kb converter/usb_usb/pro_micro -km danielbibit
+
+make keychron/v4/ansi:danielbibit
 ```
 ## Layout
 ### Main
