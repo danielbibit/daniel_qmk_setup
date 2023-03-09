@@ -11,3 +11,5 @@ RUN apt-get install -y \
 RUN python3 -m pip install qmk
 
 RUN git config --global --add safe.directory '*'
+
+# RUN qmk-setup
