@@ -1,10 +1,15 @@
 # Daniel Keyboard Repository
 
+
 ## Setup environment
 ```sh
-bash setup_links.sh
-```
+#Clone this repository with
+git clone git@github.com:danielbibit/daniel_qmk_setup.git --recurse-submodules
 
+docker-compose up -d
+docker exec -it qmk_setup /bin/bash
+
+```
 ## Compile firmware
 ```sh
 make keychron/k8_pro/ansi/rgb:danielbibit

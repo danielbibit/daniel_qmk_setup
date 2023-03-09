@@ -6,4 +6,4 @@ services:
     build: .
     volumes:
       - ./:/workspace/
-    command: sleep infinity
+    command: bash container_start.sh

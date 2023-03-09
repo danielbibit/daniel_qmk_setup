@@ -12,4 +12,19 @@ RUN python3 -m pip install qmk
 
 RUN git config --global --add safe.directory '*'
 
-# RUN qmk-setup
+WORKDIR /workspace
+
+COPY . .
+
+# Setup qmk on keychron fork
+WORKDIR /workspace/qmk/keychron_fork/qmk_firmware
+
+RUN qmk setup --yes
+
+# Setup qmk upstream
+WORKDIR /workspace/qmk/upstream/qmk_firmware
+
+RUN qmk setup --yes
+
+#Set workspace back
+WORKDIR /workspace
