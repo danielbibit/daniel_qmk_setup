@@ -1,0 +1,92 @@
+(defalias
+    fn  (layer-toggle daniel_fn)
+    calc  C-A-c
+    code  C-A-o
+    note  C-A-w
+    audio_toggle C-A-f1
+    mic_toggle C-A-m
+    win_lock M-l
+    terminal C-A-t
+    term-edit (macro C-x C-e)
+    caps_esc_ctrl (tap-hold 200 200 esc lctrl)
+    enter_fn (tap-hold 200 200 ret @fn)
+    space_mouse (tap-hold 200 200 spc (layer-toggle mouse_fn))
+    space_ctrl (tap-hold 200 200 spc lctl)
+)
+
+
+(defsrc
+    esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 home end ins del
+
+    grv  1 2 3 4 5 6 7 8 9 0 - = bspc
+
+    tab q w e r t y u i o p [ ] \
+
+    caps a s d f g h j k l ; ' ret
+
+    lsft z x c v b n m , . / rsft
+
+    wkup lctl lmet lalt spc ralt sys rctl pgdn up pgup
+
+    left down rght
+)
+
+
+(deflayer main
+    esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 home end ins del
+
+    grv  1 2 3 4 5 6 7 8 9 0 - = bspc
+
+    tab q w e r t y u i o p [ ] \
+
+    @caps_esc_ctrl a s d f g h j k l ; ' @enter_fn
+
+    lsft z x c v b n m , . / rsft
+
+    wkup @fn lmet lalt @space_mouse ralt XX rctl pgdn up pgup
+
+    left down rght
+)
+
+
+(deflayer daniel_fn
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @terminal f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 del
+
+    @audio_toggle pp @note prev next @code _ _ _ _ up _ pgup @win_lock
+
+    _ @term-edit prnt _ @mic_toggle _ left down up rght _ pgdn ins
+
+    _ VolumeDown VolumeUp @calc VolumeMute _ down _ Home End _ _
+
+    _ caps _ _ @space_ctrl _ _ _ _ _ _
+
+    _ _ _
+)
+
+(defalias
+    mwu (mwheel-up 50 120)
+    mwd (mwheel-down 50 120)
+
+    msup (movemouse-accel-up 2 1000 1 9)
+    mslf (movemouse-accel-left 2 1000 1 9)
+    msrg (movemouse-accel-right 2 1000 1 9)
+    msdw (movemouse-accel-down 2 1000 1 9)
+)
+
+(deflayer mouse_fn
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    _ mlft @msup mrgt @mwu _ _ _ _ _ _ _ _ _
+
+    _ @mslf @msdw @msrg @mwd _ _ mlft mrgt _ _ _ _
+
+    _ _ _ _ _ _ _ _ _ _ _ _
+
+    _ _ _ _ _ _ _ _ _ _ _
+
+    _ _ _
+)
