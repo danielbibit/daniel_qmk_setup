@@ -1,0 +1,51 @@
+keymap:
+  - name: Chrome macos
+    application:
+      only: ["google-chrome.Google-chrome"]
+    remap:
+      C-w: []
+      M-w: C-w
+
+      C-l: []
+      M-l: C-l
+
+      C-t: []
+      M-t: C-t
+
+      C-Shift-b: []
+      M-Shift-b: C-Shift-b
+
+      C-Shift-n: []
+      M-Shift-n: C-Shift-n
+
+      C-n: []
+      M-n: C-n
+
+      C-r: []
+      M-r: C-r
+
+      C-a: home
+      C-e: end
+
+  - name: Copy-Paste and general shorcuts
+    application:
+      not: ["org.wezfurlong.wezterm.org.wezfurlong.wezterm", "ghostty.com.mitchellh.ghostty"]
+    remap:
+      C-x: []
+      M-x: C-x
+
+      C-c: []
+      M-c: C-c
+
+      C-v: []
+      M-v: C-v
+
+      C-a: []
+      M-a: C-a
+
+  - name: Copy-Paste terminal
+    application:
+      only: ["org.wezfurlong.wezterm.org.wezfurlong.wezterm", "ghostty.com.mitchellh.ghostty"]
+    remap:
+      M-c: C-Shift-c
+      M-v: C-Shift-v
