@@ -1,7 +1,9 @@
 keymap:
   - name: Chrome macos
     application:
-      only: ["google-chrome.Google-chrome"]
+      only: 
+        - "google-chrome.Google-chrome"
+        - "chromium"
     remap:
       C-w: []
       M-w: C-w
@@ -29,7 +31,10 @@ keymap:
 
   - name: Copy-Paste and general shorcuts
     application:
-      not: ["org.wezfurlong.wezterm.org.wezfurlong.wezterm", "ghostty.com.mitchellh.ghostty"]
+      not: 
+        - "org.wezfurlong.wezterm.org.wezfurlong.wezterm"
+        - "ghostty.com.mitchellh.ghostty"
+        - "com.mitchellh.ghostty"
     remap:
       C-x: []
       M-x: C-x
@@ -45,7 +50,11 @@ keymap:
 
   - name: Copy-Paste terminal
     application:
-      only: ["org.wezfurlong.wezterm.org.wezfurlong.wezterm", "ghostty.com.mitchellh.ghostty"]
+      only:
+        - "org.wezfurlong.wezterm.org.wezfurlong.wezterm"
+        - "ghostty.com.mitchellh.ghostty"
+        - "com.mitchellh.ghostty"
     remap:
       M-c: C-Shift-c
       M-v: C-Shift-v
+
