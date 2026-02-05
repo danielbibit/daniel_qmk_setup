@@ -4,7 +4,7 @@ mkdir ${HOME}/.config/kanata
 ln -sf $PWD/config.kbd ${HOME}/.config/kanata/config.kbd
 
 sudo cp 10-daniel.keyboard.rules /etc/udev/rules.d/
-sudo groupadd uinput
+sudo groupadd --system uinput
 sudo usermod -aG input $USER
 sudo usermod -aG uinput $USER
 sudo modprobe uinput

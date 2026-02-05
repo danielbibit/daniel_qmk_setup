@@ -1,0 +1,13 @@
+[Unit]
+Description=Basic xremap macos bindings
+Documentation=https://github.com/jtroo/kanata
+
+[Service]
+Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
+Nice=-20
+Type=simple
+ExecStart=%h/.cargo/bin/xremap %h/.config/xremap/config.yml
+Restart=no
+
+[Install]
+WantedBy=default.target

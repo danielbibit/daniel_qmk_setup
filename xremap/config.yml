@@ -35,6 +35,7 @@ keymap:
         - "org.wezfurlong.wezterm.org.wezfurlong.wezterm"
         - "ghostty.com.mitchellh.ghostty"
         - "com.mitchellh.ghostty"
+        - "org.omarchy.nvim"
     remap:
       C-x: []
       M-x: C-x
@@ -54,6 +55,7 @@ keymap:
         - "org.wezfurlong.wezterm.org.wezfurlong.wezterm"
         - "ghostty.com.mitchellh.ghostty"
         - "com.mitchellh.ghostty"
+        - "org.omarchy.nvim"
     remap:
       M-c: C-Shift-c
       M-v: C-Shift-v
